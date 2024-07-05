@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reports</title>
+<link rel="stylesheet" href="../../sufyantech - Copy (2)/style.css">
+<link rel="stylesheet" href="../../sufyantech - Copy (2)/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+<script type="text/javascript" src="../../sufyantech - Copy (2)/techbuddyjsdata.json"></script>
+<script type="text/javascript" src=""></script>
+
+</head>
+<script>
+  function ghostdata(){
+	  var showdata=document.getElementById("showdata");
+	  showdata.innerHTML="";
+	  for(var i=0;i<userdata.length;i++){
+		  showdata.innerHTML+='<tr><td>'+(i+1)+'</td><td>'+userdata[i].tdate+'</td><td>'+userdata[i].ttime+'</td><td>'+userdata[i].name+'</td><td>'+userdata[i].crime+'</td><td>'+userdata[i].tlocation+'</td></tr>';
+	  }
+  }
+</script>
+<body onLoad="ghostdata()">
+<h1 class="text-center">Reports</h1>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-12">
+		
+<table id="ghostdata_table">
+<thead class="saif">
+	<tr>
+	<th>Sr</th>
+		<th>Date</th>
+		<th>Time</th>
+		<th>Name</th>
+		<th>Crime</th>
+		<th>Loctaion</th>
+	</tr>
+	
+	</thead>
+	
+	<tbody id="showdata">
+	
+	</tbody>
+</table>
+
+	</div>
+</div>
+</div>
+<!--	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4" style="margin-top: 30px">
+				<img src="img/woman.png" class="img-fluid">
+			</div>
+			<div class="col-md-8" id="color">
+				<p style="margin-top: 30px">Over the course of history, women have made tremendous strides in our culture. Centuries ago women were considered second class citizens without the right to vote, work or any of the freedoms that women enjoy today. Since the Equal Rights Amendment was passed in its current state in 1972, women have gained freedom at work, in the home and elsewhere. However, despite the freedoms that women have been granted, they still need to be concerned about the problem of violence against them.
+
+While women are equal citizens under the word of the law, the fact that women are generally smaller in size than men put them at a disadvantage. In today’s world women need to continually be on guard against violence from men. Violence can come in a number of ways, places and forms from men. Violence can occur in the home in the form of domestic violence as well as out during dates. In addition, assault and harassment can even take place in the workplace.
+
+While violence against women is a serious problem today, women do not have to become victims. By learning simple self-defense techniques, women may be able to protect themselves enough to at the minimum buy some time in order to get help or even fight off attackers to have them leave. Also, using practical common sense methods such as avoid being alone, never go out alone with strangers and never put themselves in potentially dangerous situations.
+
+We hope the following resources will help learn more about potential dangers and how to stay safe and secure. Please feel free to re-visit this page again as well as share it with others who may benefit from the information. And, the bottom line for all women is stay safe!</p>
+			</div>
+		</div>
+	</div>-->
+</body>
+<script type="text/javascript" src="../../sufyantech - Copy (2)/js/bootstrap.js"></script>
+<script type="text/javascript" src="../../sufyantech - Copy (2)/jquery.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script>
+$(document).ready( function () {
+    $('#techbuudyshowdata_table').DataTable({
+		 "bProcessing": true,
+    "sAutoWidth": false,
+    "bDestroy":true,
+    "sPaginationType": "bootstrap", // full_numbers
+    "iDisplayStart ": 10,
+    "iDisplayLength": 10,
+    "bPaginate": false, //hide pagination
+    "bFilter": false, //hide Search bar
+    "bInfo": false, // hide showing entries
+	});
+} );	
+	</script>
+</html>
+

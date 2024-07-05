@@ -1,0 +1,971 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eveplus</title>
+	<link rel="icon" href="images/logo00.PNG">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="animation/animate.min.css">
+</head>
+
+<body>
+<p id="count"></p>
+<div class="form-popup" id="pop">
+  <form class="form-container">
+    <h1 class="text-center">Welcome</h1>
+
+    <label><b>User Name</b></label>
+    <input type="text" placeholder="Enter User Name" id="pop1">
+<span id="namedataerror"></span>
+    <button type="button" class="btn" onclick="closeForm()">Ok</button>
+  </form>
+</div>
+
+	<nav class="navbar navbar-expand-lg navbar-light  bg-dark webghosts">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+	  <section class="col-md-4 pl-5 webghosts">
+		<img src="images/logo00.PNG" alt="" width="80px">
+		<span style="color: white">visiters 
+			<span id="countteamname1" style=""></span>
+<span id="countteamname2"  style=""></span>
+<span id="countteamname3"  style=""></span>
+<span id="countteamname4" style=""></span>
+<script>
+	var i = 1;  
+function myLoopteamname () {
+   setTimeout(function () { 
+	  var  digits= (""+i).split("");
+	   if(digits.length==4){
+		    document.getElementById("countteamname1").innerHTML=digits[0];
+		   document.getElementById("countteamname2").innerHTML=digits[1];
+		   document.getElementById("countteamname3").innerHTML=digits[2];
+		   document.getElementById("countteamname4").innerHTML=digits[3];
+	   }
+	   else if(digits.length==3){
+		    document.getElementById("countteamname1").innerHTML=0;
+		   document.getElementById("countteamname2").innerHTML=digits[0];
+		   document.getElementById("countteamname3").innerHTML=digits[1];
+		   document.getElementById("countteamname4").innerHTML=digits[2];
+	   }
+	    else if(digits.length==2){
+		    document.getElementById("countteamname1").innerHTML=0;
+		   document.getElementById("countteamname2").innerHTML=0;
+		   document.getElementById("countteamname3").innerHTML=digits[0];
+		   document.getElementById("countteamname4").innerHTML=digits[1];
+	   }
+	    else if(digits.length==1){
+		   document.getElementById("countteamname1").innerHTML=0;
+		   document.getElementById("countteamname2").innerHTML=0;
+		   document.getElementById("countteamname3").innerHTML=0;
+		   document.getElementById("countteamname4").innerHTML=digits[0];
+	   }
+	   
+      i++;                    
+      if (i <= Math.floor(Math.random() * 1000) + 500) {     
+         myLoopteamname(); 
+      }        
+   }, 2)
+}
+
+myLoopteamname();  
+	</script>
+		
+		</span>
+	  </section>
+	  <section class="col-md-8 webghosts">
+		  <div class="collapse navbar-collapse navigation_main" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			 <li>
+				<a href="index.html">Home</a>
+			 </li>
+
+			  <li class="nav-item">
+				<a href="index.html#women_navlink">WomenHeroes</a>
+			  </li>
+			  <li>
+			  	<a href="index.html#saftey_navlink">Safteymeasures</a>
+			  </li>
+			  <li>
+				<a href="index.html#campaign_navlink">CampaignIdeas</a>
+			  </li>
+			  <li>
+				<a href="index.html#contact_navlink">ContactUs</a>
+			  </li>
+			  <li>
+				<a href="index.html#self_navlink">Selfdefense</a>
+			  </li>
+			 
+			</ul>
+				
+
+		  </div>
+		  <span id="web_ghosts_username" style="color: aliceblue; float:right;"></span>
+	  </section>
+	  
+	</nav>
+	
+	
+	
+	
+	<section id="carouselExampleIndicators" class="carousel slide web_ghosts mt-5" data-ride="carousel">
+		<ul class="carousel-indicators web_ghosts">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		</ul>
+		<section class="carousel-inner web_ghosts">
+			<section class="carousel-item active web_ghosts">
+				<img src="images/s1.jpg" class="d-block w-100 web_ghosts" alt="">
+			</section>
+			<section class="carousel-item">
+				<img src="images/s2.jpg" class="d-block w-100 web_ghosts" alt="">
+			</section>
+			<section class="carousel-item">
+				<img src="images/s3.jpg" class="d-block w-100 web_ghosts" alt="">
+			</section>
+			<section class="carousel-item">
+				<img src="images/slide3.png" class="d-block w-100 web_ghosts" alt="">
+			</section>
+		</section>
+		<a class="carousel-control-prev web_ghosts" role="button" data-slide="prev" href="#carouselExampleIndicators">
+			<span class="carousel-control-prev-icon"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next web_ghosts" role="button" data-slide="next" href="#carouselExampleIndicators">
+			<span class="carousel-control-next-icon web_ghosts" aria-hidden="true"></span>
+			<span class="sr-only web_ghosts	">Next</span>
+		</a>
+	</section>
+	<section class="container-fluid self_defense webghosts" id="self_navlink">
+		<section class="row">
+			<section class="col-md-12 selfdefense_content bounceIn webghosts">
+				<h1>Self Defense & Tips</h1>
+			</section>
+		</section>
+		<section class="row">
+			<section class="col col-md-4 col-12 box1 bounceIn webghosts">
+				<h4>Show that you're Aware:</h4>
+				<p>Show the environment that you are aware of what's happening around you. Potential assailants prefer women that seem distracted or preoccupied. If you look assertive and aware, they might never initiate the assault.</p>
+			</section>
+			<section class="col col-md-4 col-12 box2 webghosts">
+				<h4>Prepare Your body</h4>
+				<p>If you sense danger, immediately go to a starting fighting position. Move your hands close to your chest, place your right foot a bit ahead of the left and tilt your body forward. Your body is now ready for a physical confrontation.</p>
+			</section>
+			<section class="col col-md-4 box3 col-12 bounceIn webghosts">
+				<h4>Have a weapon to reach for:</h4>
+				<p>An umbrella, a set of keys or a pen can make all the difference in a moment of crisis. Remember where they are and be prepared to draw them if you feel threatened.</p>
+			</section>
+		</section>
+		<section class="row">
+			<section class="col col-md-4 col-12 box4 webghosts">
+				<h4>Call for help: </h4>
+				<p>Calling for help may not provide it but it may scare the attacker enough to allow you to escape. Many women get confused and don't know what to scream. Shouting 'fire' for instance, can be better and more attention grabbing than simply yelling 'help'</p>
+			</section>
+			<section class="col col-md-4 box5 col-12 bounceIn webghosts">
+				<h4>Know the weak spots in the body:</h4>
+				<p> If you do find yourselves in a physical confrontation, you can scratch, pull, hit or grab, as you aim directly to one of the five weak spots: Eyes, nose, neck, knees and groin!</p>
+			</section>
+			<section class="col col-md-4 col-12 box6 webghosts">
+				<h4>Don't be scared to fight:</h4>
+				<p>Many women are scared to strike back because they are scared of their assailant's anger, or are afraid to hurt themselves. The punch you give may hurt you, but the pain is minor and if it's enough to allow you to escape - it's well worth it.</p>
+			</section>
+		</section>
+		<section class="row">
+			<section class="col col-md-12 col-12 self_defense_videos webghosts">
+				<a href="selfdefensevids.html" id="button1">For Self Defense Videos</a>
+			</section>
+		</section>
+	</section>
+	<section class="container-fluid safety_measures webghosts" id="women_navlink">
+		<section class="row">
+			<section class="col col-md-12 safety_heading webghosts">
+				<h1>Women Heroes</h1>
+				<p>
+				LAHORE (Ali Zain) – While world is marking International Women’s Day on Tuesday, Pakistan is all set to announce its first ever National Women Empowerment Policy with ‘Pledge For Parity’ theme.Pakistan’s move to accept the importance of female gender is not new. It came into being as result of a movement in which women like Fatima Jinnah actively participated.Later on, Benazir Bhutto made Pakistan proud by becoming first female Prime Minister of any Muslim country. She did it twice while countries like United States are still reluctant to have a woman as president.Additionally Pakistan is one of the few countries where women have a fixed number of seats in legislation assemblies, which provides them with a due right to participate in the law making process of country.This way our women continue to make Pakistan proud and some of them have recently proved the country a global leader by winning honors in different fields. Top ten of these inspirational women are as following:</p>
+			</section>
+		</section>
+		<section class="row text-center ml-5 webghosts">
+			<section class="col col-md-12 safety_left text-center mt-4 webghosts">
+				<h3>Here are some women heroes</h3>
+			</section>
+			<section class="container">
+				<div id="carouselExampleControls" class="carousel slide webghosts" data-ride="carousel">
+						<div class="carousel-inner webghosts">
+						  <div class="carousel-item active webghosts">
+							<div class="row">
+							  <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3 webghosts">
+							  <div class="card text-center webghosts">
+								  <img src="images/nargis.jpg" class="card-img-top img-fluid webghosts" alt="...">  
+								  <h5 class="card-title webghosts">DR NARGIS MAVALVALA</h5>
+								 <p>
+								  <button class="btn btn-primary webghosts" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+									SHORT DETAIL
+								  </button>
+								</p>
+								<div class="collapse webghosts" id="collapseExample">
+								  <div class="card card-body webghosts">
+								  	Dr Nergis Mavalvala
+									In February, Pakistan-born astrophysicist played a part in discovery of gravitational waves.
+
+									Professor Mavalvala worked with researchers at the US-based underground detectors Laser Interferometer Gravitational-wave Observatory (LIGO) Laboratory to build sophisticated  sensors to detect gravitational ripples created from the collision of two black holes some 1.3 billion years ago and had been hurtling through space to reach Earth on September 14, 2015.
+
+								  </div>
+								</div>
+							   </div>
+							  </div>
+							  <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3 webghosts">
+								  <div class="card text-center webghosts">
+									<img src="images/Shazia-Parveen.jpg" class="card-img-top img-fluid webghosts" alt="...">
+									  <h5 class="card-title webghosts">SHAZIA PARVEEN</h5>
+										<p>
+										  <button class="btn btn-primary webghosts" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse" id="collapseExample1">
+										  <div class="card card-body webghosts">
+										 	 Shazia Perveen is Pakistan’s first firefighter, who joined Rescue 1122 in 2010 at the age of 25. She  belongs to Vehari District in Punjab.
+											Having managed to wriggle into a world of men, Perveen thinks that that women can tackle any job and take up any profession of their choice.
+											“At the outset, people would laugh at me when they saw me working with male workers. But afterwards, when I saved their precious properties during fires, they started admiring me,” Perveen said in an interview.
+										  </div>
+										</div>                
+								  </div>
+							  </div>
+							   <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3">
+								  <div class="card text-center webghosts">
+										  <img src="images/Sharmeen-Obaid-Chinoy.jpg" class="card-img-top img-fluid" alt="..."> 
+										  <h5 class="card-title webghosts">SHARMEEN OBAID CHINOY</h5>
+										<p>
+										  <button class="btn btn-primary webghosts" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse webghosts" id="collapseExample2">
+										  <div class="card card-body">Sharmeen Obaid Chinoy is Pakistan-Canadian two-times Oscar winner for documentaries based on real stories from Pakistan. She got education from United States but her soul remains stuck in Pakistan’s crucial circumstances.She started film-making career in 2012 with documentary “Terror’s Children”. Later her documentaries “Saving Face” and “A Girl in the River: The Price of Forgiveness” won academy awards.
+										  </div>
+										</div>               
+									 </div>
+									 </div>
+									<div class="col-md-3 col-sm-6 col-xl-3 col-lg-3 webghosts">
+									   <div class="card text-center webghosts">
+											<img src="images/malala.jpg"	 class="card-img-top img-fluid" alt="...">
+											 <h5 class="card-title webghosts">MALALA YOUSAFZAI</h5>
+										<p>
+										  <button class="btn btn-primary webghosts" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse" id="collapseExample3">
+										  <div class="card card-body webghosts">
+										  Malala Yousafzai, the globally known child rights activist, has made us proud many times be it thorough winning Nobel Prize for Peace or her address to United Nations General Assembly.Malala originally hails from Malakand district of Pakistan. She started her writing career as a student Taliban insurgents took over Sawat valley and shut down all schools.Later after Pakistan army cleared the area from Taliban fighter, a group of militants attacked Malala on her way to school. Since then she has moved to United Kingdom along with her family. 
+										  </div>
+										</div>               
+									   </div>
+								   </div>
+							  </div>
+						  </div>
+						  <div class="carousel-item">
+							  <div class="row">
+								  <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3 webghosts">
+								  <div class="card text-center webghosts">
+									  <img src="images/zenath.jpg" class="card-img-top img-fluid" alt="...">  
+									  <h5 class="card-title">ZENATH IRFAN</h5>
+										<p>
+										  <button class="btn btn-primary webghosts" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse" id="collapseExample4">
+										  <div class="card card-body webghosts">
+										  Zenith Irfan is first Pakistani woman who completed a journey through the Kashmir belt via motorcycle, showing the world that how peaceful Pakistan has been.The 20-year-old, inspired by the dream of her deceased father who “wanted to travel the world on a bike”, hails from Lahore and she traveled through Kashmir, riding different motorcycle models including Honda 125, Honda CD -70 and Suzuki GS-150.
+										  </div>
+										</div>             
+									</div>
+								  </div>
+								  <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3">
+									  <div class="card text-center webghosts">
+										  <img src="images/namira.jpg" class="card-img-top img-fluid webghosts" alt="...">
+										  <h5 class="card-title">NAMIRA SALEEM</h5>
+										<p>
+										  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse" id="collapseExample5">
+										  <div class="card card-body webghosts">
+										  Namira Saleem became the first Pakistani, man or woman, to reach North and South Poles when she achieved this distinction in 2008.She also holds the title of being the first Asian and first Pakistani to skydive over Mount Everest during the historic First Everest Skydives project in 2008.She is also going to be the first Pakistani to travel into Space when the first commercial space flight by Virgin Galactic takes off.
+										  </div>
+										</div>                
+										</div>
+									  </div>
+									  <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3 webghosts">
+										  <div class="card text-center webghosts">
+											  <img src="images/fatima.jpg" class="card-img-top img-fluid" alt="..."> 
+											  <h5 class="card-title webghosts">SYEDA GHULAM FATIMA</h5>
+										<p>
+										  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse webghosts webghosts" id="collapseExample6">
+										  <div class="card card-body webghosts">
+										  In September 2015, labour rights activist Syeda Ghulam Fatima, general secretary of the Bonded Labour Liberation Front Pakistan (BLLF), was presented with the Clinton Global Citizen Award 2015 for leadership in civil society.She works for the betterment of bonded labour in Pakistan and is known for advocating compliance of International Labour Organisation’s key labour standards in Pakistan.
+										  </div>
+										</div>                 
+									</div>
+									 </div>
+								   <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3 webghosts">
+									   <div class="card text-center webghosts">
+											<img src="images/marium.jpg" class="card-img-top img-fluid" alt="...">
+											 <h5 class="card-title webghosts">MARIUM MUKHTAR</h5>
+										<p>
+										  <button class="btn btn-primary webghosts" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse webghosts" id="collapseExample7">
+										  <div class="card card-body webghosts">
+										  Although the 24-year-old Flying Officer was martyred when her training aircraft crashed near Mianwali in November, Marium will always be remembered as the first lady pilot of the Pakistan Air Force (PAF) to attain the great honour.Flying Officer Marium Mukhtiar TBt, PAF was a Pakistani fighter pilot. She died after a Pakistan Air Force FT-7PG aircraft crashed near Kundian in Mianwali District in the northwest of Punjab, Pakistan on November 24, 2015. She is the first female combat pilot of Pakistan to die in a crash on duty.
+										  </div>
+										</div>                
+									  </div>
+								 </div>
+						   </div>
+						  </div>
+						  <div class="carousel-item webghosts">
+							  <div class="row">
+								  <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3 webghosts">
+								  <div class="card text-center webghosts">
+									  <img src="images/muniba.jpg" class="card-img-top img-fluid" alt="...">  
+									  <h5 class="card-title">MUNIBA MAZARI</h5>
+										<p>
+										  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse webghosts" id="collapseExample8">
+										  <div class="card card-body webghosts">
+										  Muniba Mazari is a Pakistani women artist and activist. She uses a wheelchair due to injuries sustained in a car accident at the age of 21 which makes her Pakistan's first wheelchair-using model. She is also the National Ambassador for UN Women Pakistan.
+										  </div>
+										</div>            
+									</div>
+								  </div>
+								  <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3 webghosts">
+									  <div class="card text-center webghosts">
+										  <img src="images/fiza.jpg" class="card-img-top img-fluid webghosts" alt="...">
+										  <h5 class="card-title">FIZA FARHAN</h5>
+										<p>
+										  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse" id="collapseExample9">
+										  <div class="card card-body">
+										  Fiza Farhan is an accomplished business professional in the Renewable Energy, Women Empowerment and Impact Investment sectors in Pakistan. With her charismatic personality, unwavering commitment, passionate zeal and dynamic energy, she has become a proud representation of the youth and women of Pakistan on an international level. With multiple awards to her credit, Fiza was the Forbes Magazine ?30 Under 30 Social Entrepreneur? for 2015 and serves as a panelist on the UN Secretary General?s High Level Panel for Women Economic Empowerment. ?52 Pearls of Life? is a compilation of Fiza?s thoughts and her message to the reader to find their hidden potential and unleash their real selves towards a life of success and eternal happiness.
+										  </div>
+										</div>                  
+										</div>
+									  </div>
+									  <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3">
+										  <div class="card text-center webghosts">
+											  <img src="images/minhal.jpg" class="card-img-top img-fluid" alt="..."> 
+											  <h5 class="card-title">MINHAL SOHAIL</h5>
+										<p>
+										  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse" id="collapseExample10">
+										  <div class="card card-body">
+										  The 21-year-old became Pakistan’s first female shooter to compete at Olympics 2016. Although, she couldn’t win gold and secured 28th position in the 10m air rifle event, Minhal has made us proud by qualifying for the Rio Games.
+										  </div>
+										</div>               
+											</div>
+										  </div>
+									   <div class="col-md-3 col-sm-6 col-xl-3 col-lg-3">
+										   <div class="card text-center">
+											  <img src="images/iqra.jpg" class="card-img-top img-fluid" alt="...">
+											   <h5 class="card-title">IQRA SALEEM KHAN</h5>
+										<p>
+										  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample">
+											SHORT DETAIL
+										  </button>
+										</p>
+										<div class="collapse" id="collapseExample11">
+										  <div class="card card-body">
+										  Ikra Saleem Khan, a student of University College Lahore, came out on top at the University of London LLB examinations, scoring the highest aggregate marks this year.
+										  More power to them!
+										  </div>
+										</div>                
+										   </div>
+										</div>
+								  </div>
+						  </div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+				</div>
+					<!-- card slider end -->
+			</section>
+		</section>		
+		<section class="row">
+			<section class="col col-md-12 self_defense_videos">
+				<a href="womenheroes.html" id="button2">Women Heroes Gallery</a>
+			</section>
+		</section>
+	</section>
+	<section class="container-fluid eye_witness" id="eyewitness_navlink">
+		<section class="row">
+			<section class="col col-md-12 text-center pt-4 eye_witness_heading bounceIn webghosts">
+				<h3>EYE WITNESS ACCOUNTS</h3>
+				<p>
+					Eye witness accounts includes some of the most horrifying audios of the womens who got out of the most dangerous
+					situations of there life's.Here we have the audio of their stories in their own voice they have described the 
+				   about incident and the place of incident where as a women you must not go and also the audio clips will help you 
+				   about what you have to do in a situation that the brave womens has faces before you and survived. 
+				</p>
+			</section>
+		</section>
+		<section class="row">
+			<section class="col col-md-12 audio_files webghosts">
+				<audio controls class="outline_audio">
+					<source src="Eye-witness accounts/Audio/Brianne survivor of domestic violence tells her story.mp3" type="audio/mpeg">
+				</audio>
+				<p id="para">-Brianne survivor of domestic violence tells her story.</p>	
+			</section>
+			<section class="col col-md-12 audio_files webghosts">
+				<audio controls class="outline_audio webghosts">
+					<source src="Eye-witness accounts/Audio/crime against women story.mp3" type="audio/mpeg">
+				</audio>
+				<p id="para1">-Crime against womens story.</p>
+			</section>
+			<section class="col col-md-12 audio_files webghosts">
+				<audio controls class="outline_audio webghosts">
+					<source src="Eye-witness accounts/Audio/joe biden the violence against women act.mp3" type="audio/mpeg">
+				</audio>
+				<p id="para2">Joe biden the violence against women.</p>
+			</section>
+			<section class="col col-md-12 audio_files webghosts">
+				<audio controls class="outline_audio webghosts">
+					<source src="Eye-witness accounts/Audio/The story of violence against women in australia.mp3" type="audio/mpeg">
+				</audio>
+				<p id="para3">-The story of violence against women in australia.</p>
+			</section>
+			<section class="col col-md-12 audio_files webghosts">
+				<audio controls class="outline_audio">
+					<source src="Eye-witness accounts/Audio/Violence against women in pakistan in urdu.mp3" type="audio/mpeg">
+				</audio>
+				<p id="para4">-Violence against women in pakistan in urdu.</p>
+			</section>
+		</section>
+	</section>
+	<section class="container-fluid" id="saftey_navlink">
+		<section class="row">
+			<section class="col col-md-12 security webghosts">
+				<h3>Saftey Measures</h3>
+				<p>It’s depressing to see a question like this in the first place. We as a society have evolved in almost every possible way. But when it comes to women’s safety we fail. ‘ FAIL’ is an understatement here, we are not even AWARE. The statistics say it all.When you ask, what measures should be taken for women’s safety?	I don’t know how do I articulate since women are harassed everywhere. Women’s safety in the workplace, in the marketplace, at homes, and in any public place are crucial to ensure women’s safety in <general class=""></general></p>
+			</section>
+		</section>
+		<section class="row">
+			<section class="col col-md-12 cards_safety webghosts">
+				<div class="card mb-3 webghosts"> 
+				  <div class="row no-gutters webghosts">
+					<div class="col-md-4 image_hoverall">
+					  <img src="images/card1.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8 webghosts">
+					  <div class="card-body webghosts">
+						<h5 class="card-title webghosts">START WITH AWARENESS:</h5>
+						  <p class="card-text webghosts">
+						Aware people left, right and center. Talk about the issue in public and especially start at your homes. We always teach our girl child to behave in a particular way, we certainly have the do’s and don’ts for them. This conditioning stops the women to speak up when they are harassed sexually. They are ashamed. They fear consequences and so on. Why can't we give our girls more freedom? Why don't teach our boys to treat the girls right? We have evolved so much with time and technology. But when comes to respect our women we fail big time
+						SELF DEFENSE: Yes! you heard it right, Be self-sufficient and take self-defense training so that you can take care of yourselves. This will you to gain confidence and fight for yourselves at any adversity you face.</p>
+					  </div>
+					</div>
+				  </div>
+				</div>	
+				<div class="card mb-3 webghosts">
+				  <div class="row no-gutters webghosts">
+					<div class="col-md-8 webghosts">
+					  <div class="card-body webghosts">
+						<h5 class="card-title webghosts">KNOW YOUR RIGHTS AND THE LAW:</h5>
+						<p class="card-text webghosts"> You should know your rights and the laws against sexual harassments. There are strict laws against it.Sexual harassment is the unwelcome sexual behavior, which makes a person feel offended, humiliated, degraded or intimidated. It is non-consensual and unacceptable. When you face any such harassments speak up and file a complaint against the harasser.PEPPER SPRAY: Always carry a pepper Spray wherever you travel. This is one of the most effective ways to tackle the harasser when you don't have anybody to look out for.</p>
+					  </div>
+					</div>
+					<div class="col-md-4 image_hoverall">
+					  <img src="images/law-photo.jpg" class="card-img" alt="...">
+					</div>
+				  </div>
+				</div>
+				<div class="card mb-3 webghosts">
+				  <div class="row no-gutters webghosts">
+					<div class="col-md-4 image_hoverall webghosts">
+					  <img src="images/self.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+					  <div class="card-body webghosts">
+						<h5 class="card-title webghosts">TAKE SELF-DEFENSE TRAINING:</h5>
+						<p class="card-text webghosts">It is important to evaluate the goals and practical usefulness of a women’s self-defense program before signing up.Here are two tips: - Avoid martial arts studios** unless you specifically wish to train in the traditional martial arts techniques and are prepared for a long-term commitment. Many women’s self-defense programs teach watered-down martial arts techniques that are complex and unrealistic under the stress of an actual attack. - The self-defense program should include simulated assaults**, with a fully padded instructor in realistic rape and attack scenarios, to allow you to practice what you’ve learned.</p>
+					  </div>
+					</div>
+				  </div>
+				</div>	
+				<div class="card mb-3">
+				  <div class="row no-gutters webghosts">
+					<div class="col-md-8 webghosts"> 
+					  <div class="card-body webghosts">
+						<h5 class="card-title webghosts">YOU HAVE A RIGHT TO FIGHT:</h5>
+						<p class="card-text webghosts">
+						Unfortunately, no matter how diligently we practice awareness and avoidance techniques, we may find ourselves in a physical confrontation. Whether or not you have self-defense training, and no matter what your age or physical condition, it is important to understand that you CAN and SHOULD defend yourself physically. You have both the moral and legal right to do so, even if the attacker is only threatening you and hasn’t struck first. Many women worry that they will anger the attacker and get hurt worse if they defend themselves, but statistics clearly show that your odds of survival are far greater if you do fight back. Aim for the eyes first and the groin second. Remember, though, to use the element of surprise to your advantage — strike quickly, and mean business. You may only get one chance.
+						</p>
+					  </div>
+					</div>
+					<div class="col-md-4 image_hoverall webghosts">
+					  <img src="images/sunset-united-women-rights.jpg" class="card-img" alt="...">
+					</div>
+				  </div>
+				</div>	
+			</section>
+		</section>
+	</section>
+	<section class="container-fluid compaign webghosts" id="campaign_navlink">
+		<section class="row">
+			<section class="col col-md-12 compaign_heading webghosts">
+				<h3>Campaign Ideas</h3>
+			</section>
+		</section>
+	</section>
+	<section class="container-fluid webghosts">
+		<section class="row">
+			<section class="col col-md-12 col-12 bulletted_campaign webghosts">
+				<ul>
+					<li><a href="">Tell your own story; listen to others’ stories.</a></li>
+					<li><a href="">Buy book about peace, kindness, reconciliation for a local school or library.</a></li>
+					<li><a href="">Help publicize efforts in your community to end violence against women, such as a Take Back the Night march or Domestic Violence Month in October.</a></li>
+					<li><a href="">Use social media to raise awareness about violence against women and programs working to end it.</a></li>
+					<li><a href="">Donate things to local shelters that they make need (blankets, towels, personal items, food).</a></li>
+					<li><a href="">Attend public forums about policing, public safety, changes in law, sexual harassment and stalking.</a></li>
+					<li><a href="">Give to organizations working for an end to violence against women.</a></li>
+					<li><a href="">There is great variation across countries, but some national studies indicate that up to 70 percent of women experience violence from an intimate partner. One in 10 girls (120 million) experience forced sexual acts and 1-in-4 girls say that they never feel comfortable using school latrines.</a></li>
+					<li><a href="">About half the women murdered each year are killed by intimate partners or family members compared to only 6 percent of men. Vulnerable groups (girls, disability status, low income, sexuality) experience more violence.</a></li>
+					<li><a href="">In the European Union, 1-in-3 women with a health problem or disability report experiencing physical or sexual violence compared to 1-in-5 women without health or disability issues.</a></li>
+					<li><a href="">Average time people spent looking at the posters was 349% higher than the previous average measured across the same sites.</a></li>
+					<li><a href="">2,500% increase in people stopping to watch for more than 10 seconds.</a></li>
+					<li><a href="">PR reach of 326.9m people, with 70 broadcasters, newspapers and online portals covering the campaign.</a></li>
+					<li><a href="">Media companies from all quarters of the consumer press – from Mashable and Upworthy to The Telegraph, Time Out and Huffington Post – ran the story.</a></li>
+					<li><a href="">Coverage in 20 countries, from Australia to Russia, with prime-time bulletins on American news stations NBC, CBS and ABC.</a></li>
+				</ul>
+			</section>
+		</section>
+	</section>
+	<section class="container-fluid unsafe_main webghosts" id="unsafe_navlink">
+		<section class="row">
+			<section class="col col-md-12  unsafe_heading">
+				<h1>Unsafe Areas</h1>
+			</section>
+		</section>
+		<section class="row">
+			<section class="col col-md-4 border tabs_unsafe webghosts">
+					<h2>Liyari:</h2>
+					<p>Those were the days notorious Lyari gangsters Uzair Baloch and Noor Mohammed, ... Although he acknowledges that there are a few bad apples in the ranks.</p>
+			</section>
+			<section class="col col-md-4 border tabs_unsafe1 webghosts">
+				<h2>Shah faisal:</h2>
+				<p> Local police arrested a target killer from Karachi in Saturday’s wee hours and seized firearms from his custody. According to police, the target killer hails from a political party. The police said the criminal, Rafi Dad is wanted by police in killing of at least eight</p>
+			</section>
+			<section class="col col-md-4 border tabs_unsafe2 webghosts">
+				<h2>Green Town:</h2>
+				<p>A young girl was injured when an unidentified masked man threw acid on her in the Green Town area on Friday. ... She was on her way back from a local school when an unidentified masked bike rider threw acid on her and rode away from the scene</p>
+			</section>
+		</section>
+		<section class="row">
+			<section class="col col-md-4 border tabs_unsafe3 webghosts">
+					<h2>Saddar:</h2>
+					<p>Those were the days notorious Lyari gangsters Uzair Baloch and Noor Mohammed, ... Although he acknowledges that there are a few bad apples in the ranks.</p>
+			</section>
+			<section class="col col-md-4 border tabs_unsafe4 webghosts">
+				<h2>Model Town:</h2>
+				<p> Local police arrested a target killer from Karachi in Saturday’s wee hours and seized firearms from his custody. According to police, the target killer hails from a political party. The police said the criminal, Rafi Dad is wanted by police in killing of at least eight</p>
+			</section>
+			<section class="col col-md-4 border tabs_unsafe5 webghosts">
+				<h2>Kiamari:</h2>
+				<p>A young girl was injured when an unidentified masked man threw acid on her in the Green Town area on Friday. ... She was on her way back from a local school when an unidentified masked bike rider threw acid on her and rode away from the scene</p>
+			</section>
+		</section>
+		<section class="row">
+			<section class="col col-md-4 border tabs_unsafe6 webghosts">
+					<h2>North Nazimabad:</h2>
+					<p>Those were the days notorious Lyari gangsters Uzair Baloch and Noor Mohammed, ... Although he acknowledges that there are a few bad apples in the ranks.</p>
+			</section>
+			<section class="col col-md-4 border tabs_unsafe7 webghosts">
+				<h2>Liaquatabad:</h2>
+				<p> Local police arrested a target killer from Karachi in Saturday’s wee hours and seized firearms from his custody. According to police, the target killer hails from a political party. The police said the criminal, Rafi Dad is wanted by police in killing of at least eight</p>
+			</section>
+			<section class="col col-md-4 border tabs_unsafe8 webghosts">
+				<h2>Saudabad:</h2>
+				<p>A young girl was injured when an unidentified masked man threw acid on her in the Green Town area on Friday. ... She was on her way back from a local school when an unidentified masked bike rider threw acid on her and rode away from the scene</p>
+			</section>
+		</section>
+	</section>
+	<section class="container-fluid helpline_main webghosts" id="helpline_navlink">
+		<section class="row">
+			<secition class="col col-md-12 helpline_heading">
+				<h1>helpline</h1>
+			</secition>
+		</section>
+		<section class="row text-center webghosts">
+			<section class="col-md-4">
+				<th><strong>Name</strong></th>
+			</section>
+			<section class="col-md-4 webghosts">
+				<th><strong>Phone No</strong></th>
+			</section>
+			<section class="col-md-4 webghosts">
+				<th><strong>Adress</strong></th>
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				Ambulance	
+			</section>
+			<section class="col col-md-4">
+				115
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				City Railway Enquiry	
+			</section>
+			<section class="col col-md-4">
+				117 
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				CPLC	
+			</section>
+			<section class="col col-md-4">
+				568222 
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				Fire Brigade Center	
+			</section>
+			<section class="col col-md-4">
+				16 
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				Help Line	
+			</section>
+			<section class="col col-md-4">
+				915
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				K.E.S.C Complement	
+			</section>
+			<section class="col col-md-4">
+				18 
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				Motor Way Help Line	
+			</section>
+			<section class="col col-md-4">
+				130 
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				PIA Flight Enquiry
+			</section>
+			<section class="col col-md-4">
+				114  
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+		<section class="row text-center border distance">
+			<section class="col col-md-4">
+				Police Control
+			</section>
+			<section class="col col-md-4">
+				15  
+			</section>
+			<section class="col col-md-4">
+				59 Saxon Dr. karachi, WI 53150
+			</section>
+		</section>
+	</section>
+	<section class="container-fluid  col-md-6 contactus_main1 webghosts" id="contact_navlink">
+		 <section class="mb-md-0 mb-5 contact_heading webghosts">
+           <h4 class="mb-3 webghosts">CONTACT-US</h4>
+            <form id="ConnectUs" name="Connect Us" class="mycont" autocomplete="off">
+                <section class="row">
+                    <section class="col-md-6">
+                        <section class="md-form">
+                             <input type="text" id="name" name="name" placeholder="Enter Your Name" class="form-control"  onkeypress="return onlyAlphabets(event,this);">
+                            <span id="statusname" class="text-danger"></span>
+                        </section>
+                    </section>
+                </section>
+                <section class="row">
+                    <section class="col-md-6">
+                        <section class="md-form mb-0">
+                           
+                            <input type="text" id="email" placeholder="abc@mail.com i.e abc@gmail.com" name="Email" class="form-control">
+                             <span id="statusemail" class="text-danger"></span>
+                            
+                        </section>
+                    </section>
+                </section>
+                <section class="row">
+                    <section class="col-md-6">
+                       <span id="statusmessage" class="text-danger"></span>
+                        <section class="md-form">
+                            <textarea type="text" id="message" placeholder="Your Message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                         </section>
+                     </section>
+                </section>
+                <section class="row mb-3">
+                    <section class="col-md-6">
+                       <button class="btn btn-success waves-effect" onClick="validateForm()" type="button" >Send</button>
+                     </section>
+                </section>
+				
+            </form>
+        </section>
+	</section>
+	<section class="col-md-6 contact_us_left">
+		<img src="images/map-of-world.jpg" class="img-fluid map" alt="">
+	</section>
+
+	<marquee width="100%" direction="left" class="footer_marquee" scrollamount="10px" >
+    	 <span id="currenttime"></span>
+ 	</marquee>
+
+	<section class="container-fluid footer_second webghosts">
+		<section class="row move_footer">
+			<section class="col col-md-5 heading_footer webghosts">
+				<h3>About <span>EVEPLUS</span></h3>
+				<ul>
+					<li><p><span>eveplus</span> is a website where we ensure women rights and give the womens of our country
+					lessons of self defence and so on.
+					</p></li>
+					<li><a href="">23/33 North Karachi Near <br> United Bakers</a></li>
+					<li><a href="#"><span>Email:</span> supporteveplus@mail.com</a></li>
+					<li><a href="#"><span>Call:</span>  +922548765214</a></li>
+				</ul>
+			</section>
+			<section class="col col-md-5 heading_footer webghosts">
+				<h3>Important Links</h3>
+				<ul>
+					<li><a href="#self_navlink">SelDefence Tips</a></li>
+					<li><a href="#eyewitness_navlink">Eyewitness Accounts</a></li>
+					<li><a href="#saftey_navlink">Saftey Measures</a></li>
+					<li><a href="#women_navlink">Women Heroes</a></li>
+					<li><a href="#campaign_navlink">Compaign ideas</a></li>
+					<li><a href="#unsafe_navlink">Unsafe Areas</a></li>
+					<li><a href="reports2.html"	>Reports</a></li>
+					<li><a href="#contact_navlink">Contact us</a></li>
+					<li><a href="sitemap.html">Site Map</a></li>
+				</ul>
+			</section>
+			<section class="col col-md-2 text-right">
+				<img src="images/logo00.PNG" width="150px" alt="">
+			</section>
+	</section>
+</section>
+<section>
+	
+
+</section>
+</body>
+<script>
+	function validateForm() {
+  var name =  document.getElementById('name').value;
+  if (name == "") {
+      document.getElementById('statusname').innerHTML = "Name cannot be empty";
+      return false;
+  }
+	  else{
+		   document.getElementById('statusname').innerHTML = "";
+	  }
+  var email =  document.getElementById('email').value;
+  if (email == "") {
+      document.getElementById('statusemail').innerHTML = "Email cannot be empty";
+      return false;
+  } 
+	  else {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(!re.test(email)){
+          document.getElementById('statusemail').innerHTML = "Email format invalid";
+          return false;
+      }
+	 else{
+		   document.getElementById('statusemail').innerHTML = "";
+	  }
+  }
+	   
+  
+  var message =  document.getElementById('message').value;
+  if (message == "") {
+      document.getElementById('statusmessage').innerHTML = "(Message cannot be empty)";
+      return false;
+  }
+	  else{
+		   document.getElementById('statusmessage').innerHTML = "";
+	  }
+	  alert("your message has been sent");
+  document.getElementById('status').innerHTML = "Sending...";
+  document.getElementById('contact-form').submit();
+
+  }
+  function onlyAlphabets(e, t) {
+
+            try {
+
+                if (window.event) {
+
+                    var charCode = window.event.keyCode;
+
+                }
+
+                else if (e) {
+
+                    var charCode = e.which;
+
+                }
+
+                else { return true; }
+
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+
+                    return true;
+
+                else
+
+                    return false;
+
+            }
+
+            catch (err) {
+
+                alert(err.Description);
+
+            }
+
+        }
+
+	
+{
+	if(localStorage.getItem("key")==null)
+		{
+			document.getElementById("web_ghosts_username").innerHTML = "Welcome : "+localStorage.getItem("key");
+  document.getElementById("pop").style.display = "block";
+		}
+}
+
+function closeForm() {
+	var txt;
+	var namedata=document.getElementById("pop1").value;
+	if(namedata!=""){
+	var a=localStorage.setItem("key",namedata);
+	
+  document.getElementById("pop").style.display = "none";
+}
+else{
+	document.getElementById("namedataerror").innerHTML="please fill this form";
+}
+	document.getElementById("web_ghosts_username").innerHTML="Welcome : "+localStorage.getItem("key");
+}	
+	
+</script>
+<script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+</html>
+<script>
+ var con=localStorage.getItem("count")
+ cou++;
+	localStorage.setItem('count',con)
+	document.getElementById('count').innerHTML=con;
+</script>
+<script>
+$(document).ready(function(){
+	document.getElementById("web_ghosts_username").innerHTML = "Welcome : "+localStorage.getItem("key");
+});
+	
+	//for ticker with current time
+	
+	var d = new Date();
+	document.getElementById("currenttime").innerHTML = d;
+	
+	
+</script>
+
+
+<!--
+			</section>
+			<section class="col col-lg-3 heading_footer">
+				<h3>Connect Us</h3>
+				<input type="text" placeholder="Your Name" class="box">
+				<input type="email" placeholder="Email" class="box">
+				<textarea name="" id="" cols="30" rows="2" class="box">Message</textarea>
+			</section>
+			
+			
+			
+			
+	<section class="container-fluid main_copyright">
+		<section class="row">
+			<section class="col col-md-6 left_copyright">
+				<p>copyright eveplus 2018. All rights Reserved</p>
+			</section>
+			<section class="col col-md-6 right_copyright">
+				<ul>
+					<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+					<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</section>
+		</section>
+	</section>
+-->

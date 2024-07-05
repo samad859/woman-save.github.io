@@ -1,0 +1,33 @@
+// JSON Document
+var userdata=[
+	{
+		poi:"",
+		poi2:"",
+		poi3:''
+	},
+		{
+		poi:"",
+		poi2:"",
+		poi3:''
+	},
+		{
+		poi:"",
+		poi2:"",
+		poi3:''
+	},
+		{
+		poi:"",
+		poi2:"",
+		poi3:''
+	},
+		{
+		poi:"",
+		poi2:"",
+		poi3:''
+	},
+		{
+		poi:"",
+		poi2:"",
+		poi3:''
+	},
+]
